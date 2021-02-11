@@ -1,7 +1,6 @@
-'use strict'
 
 const generateHeader = () => {
-    const header = `
+    const headerHTML = `
         <div class="header">
             <button class="btn btn-burger" aria-label="открыть меню">
                 <svg focusable="false" class="svg-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -20,7 +19,7 @@ const generateHeader = () => {
                     autocapitalize="off" autocomplete="off" autocorrect="off">
                 <button type="submit" class="btn search-btn" aria-label="найти"></button>
             </form>
-            <a href="goods.html?cat=wishlist" class="btn btn-wishlist">
+            <a href="goods.html?wishlist" class="btn btn-wishlist">
                 <svg focusable="false" class="svg-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -38,7 +37,7 @@ const generateHeader = () => {
 
     `;
 
-    document.body.insertAdjacentHTML('afterbegin', header)
+    document.body.insertAdjacentHTML('afterbegin', headerHTML)
 }
 
-generateHeader();
+export default generateHeader;
